@@ -16,6 +16,10 @@ img {
     width: 20px;
 }
 
+ul {
+    list-style-type: none;
+}
+
 .page-header {
     background-color: white;
     display: flex;
@@ -36,7 +40,6 @@ img {
 
 
 .actions-list {
-    list-style-type: none;
     display: flex;
     column-gap: 15px;
     justify-content: space-evenly;
@@ -65,6 +68,7 @@ img {
 
 .searchfiled-root input {
     border: 2px solid #dbdbdb;
+    background-color: #fafafa;
     padding: 6px 8px;
 }
 
@@ -79,6 +83,7 @@ img {
 .searchfield-overlay {
     position: absolute;
     background-color: #fafafa;
+    border: 2px solid #dbdbdb;
     font-size: .9em;
     color: #acacac;
     top: 0;
@@ -86,8 +91,9 @@ img {
     height: 100%;
     display: flex;
     justify-content: center;
-    align-content: center;
+    align-items: center;
     pointer-events: none;
+    box-sizing: border-box;
     /* display: none; */
 }
 
@@ -105,3 +111,94 @@ img {
     display: grid;
     columns: 3;
 } */
+
+.description-wrapper {
+    display: flex;
+    padding: 30px 24%;
+    column-gap: 13%;
+    /* justify-content: center; */
+}
+
+.description-wrapper img {
+    width: auto;
+    height: 150px;
+    border-radius: 50%;
+}
+
+/* .name-actions-wrapper > button */
+.main-action { 
+    background-color: #0095f6;
+    color: #fff;
+    border: none;
+    margin: 5px 0;
+    padding: 0px 10px;
+    font-weight: bold;
+    border-radius: 3px;
+    height: 30px;
+}
+
+.name-actions-wrapper h1 {
+    font-weight: lighter;
+    font-size: 1.9rem;
+    margin-right: 10px;
+}
+
+.arrow {
+    transform: rotate(180deg);
+}
+
+.more {
+    display: flex;
+    align-items: center;
+    width: auto;
+    background-color: transparent;
+}
+
+.more svg {
+    height: auto;
+    width: auto;
+}
+
+.name-actions-wrapper {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+}
+
+.posts-info-wrapper {
+    display: flex;
+    column-gap: 40px;
+    margin: 25px 0;
+}
+
+.tab-container {
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+}
+
+.tab {
+    display: flex;
+    align-items: center;
+    font-size: .8rem;
+    letter-spacing: 1.5px;
+    column-gap: 5px;
+}
+
+.tab img {
+    height: .8em;
+    width: auto;
+}
+
+.photos-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 25px 15%;
+    gap: 28px;
+}
+
+.photo {
+    width: 290px;
+    height: auto;
+}
