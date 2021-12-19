@@ -1,0 +1,105 @@
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+#main {
+  border: 1px solid red;
+  box-sizing: border-box;
+  margin-left: 400px;
+  margin-top: 200px;
+  height: 768px;
+  width: 1336px;
+}
+
+li {
+  list-style-type: none;
+}
+
+header {
+  background: linear-gradient(green,white);
+  top: 0;
+  display: flex;
+}
+
+.menu, nav {
+  display: flex;
+  width: 100%;
+}
+
+.menu-item {
+  padding: 8px 16px;
+  border: 2px dashed blue;
+  box-sizing: border-box;
+}
+
+.title {
+  margin: 0;
+  color: white;
+}
+
+.search {
+  display: flex;
+  align-self: flex-end;
+}
+
+.search-box {
+
+}
+
+.search-btn{
+  background-color: purple;
+  color: white;
+  border: 2px dashed white;
+}
+
+li {
+  list-style-type: none;
+}
+
+nav {
+  margin: 0;
+}
+
+.student-list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  left: 0;
+}
+
+.student {
+  display: flex;
+  padding: 1em;
+  font-size: 1.2rem;
+}
+
+.student:hover {
+  background-color: white;
+}
+
+.student:checked {
+  background-color: green;
+  text-decoration: overline;
+  color: white;
+}
+
+.student:nth-child(2n) {
+  background-color: skyblue;
+}
+
+.student:nth-child(2n+1) {
+  background-color: pink;
+}
+
+.student input {
+  justify-self: end;
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
+}
+
+.student input:focus {
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
+}
+/* Add your CSS here */
