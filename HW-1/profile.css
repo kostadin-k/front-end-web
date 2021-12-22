@@ -184,7 +184,7 @@ input {
 @media (max-width: 890px) {
     .content {
         flex-direction: column;
-        justify-self: center;
+        justify-content: center;
         gap: 0;
     }
 
