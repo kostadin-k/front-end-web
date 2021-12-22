@@ -5,8 +5,82 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Screen 3</title>
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="profile.css">
 </head>
 <body>
-    
+    <nav>
+        <h1>Flutter</h1>
+        <form action="#" class="search">
+            <input placeholder="Search">
+            <img>
+        </form>
+    </nav>
+    <main class="content">
+        <section class="profile">
+            <header class="user">
+                <img class="user-photo" src="user-1.jpg">
+                <h2>Martin Hristov</h2>
+            </header>
+            <footer class="card">
+                <ul class="info">
+                    <li>
+                        Posts
+                        <span>1</span>
+                    </li>
+
+                    <li>
+                        Reactions
+                        <span>7</span>
+                    </li>
+                </ul>
+                <button class="action-button">Log Out</button>
+            </footer>
+        </section>
+
+        <section class="posts">
+            <div class="new-post">
+                <img class="user-photo" src="user-1.jpg">
+                <form action="#">
+                    <input placeholder="Say something">
+                    <img>
+                </form>
+            </div>
+
+            <div class="post-history">
+                <article class="post">
+                    <img class="user-photo" src="user-1.jpg">
+                    <div class="post-content">
+                        <header class="post-info">
+                            <h2>Ivan Ivanov</h2>
+                            <span>•</span>
+                            <small>0 seconds ago</small>
+                            <img>
+                        </header>
+                    
+                        <section>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </p>
+                        </section>
+ 
+                        <aside class="interactions">
+                            <ul>
+                                <li>
+                                    <img class="interaction-buttons">
+                                    10
+                                </li>
+                                <li>
+                                    <img class="interaction-buttons">
+                                    0
+                                </li>
+                            </ul>
+                        </aside>
+                    </div>
+                </article>                
+            </div>
+
+        </section>
+    </main>
 </body>
 </html>
