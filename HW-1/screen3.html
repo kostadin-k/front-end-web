@@ -5,15 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Screen 3</title>
+    <link rel="icon" href="/flutter-icon.png" type="image/png">
     <link rel="stylesheet" href="base.css">
     <link rel="stylesheet" href="profile.css">
+    <script src="https://kit.fontawesome.com/f9f6b931ff.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <nav>
         <h1>Flutter</h1>
         <form action="#" class="search">
             <input placeholder="Search">
-            <img>
+            <i class="fas fa-search"></i>
         </form>
     </nav>
     <main class="content">
@@ -41,21 +43,25 @@
         <section class="posts">
             <div class="new-post">
                 <img class="user-photo" src="user-1.jpg">
+                
                 <form action="#">
                     <input placeholder="Say something">
-                    <img>
                 </form>
+
+                <i class="far fa-comment-alt"></i>
             </div>
 
             <div class="post-history">
                 <article class="post">
                     <img class="user-photo" src="user-1.jpg">
+
                     <div class="post-content">
                         <header class="post-info">
                             <h2>Ivan Ivanov</h2>
                             <span>•</span>
                             <small>0 seconds ago</small>
-                            <img>
+
+                            <i class="close fas fa-times"></i>
                         </header>
                     
                         <section>
@@ -67,17 +73,50 @@
                         <aside class="interactions">
                             <ul>
                                 <li>
-                                    <img class="interaction-buttons">
+                                    <i class="interaction-buttons far fa-thumbs-up"></i>
                                     10
                                 </li>
                                 <li>
-                                    <img class="interaction-buttons">
+                                    <i class="interaction-buttons far fa-thumbs-down"></i>
+                                    3
+                                </li>
+                            </ul>
+                        </aside>
+                    </div>
+                </article>
+                
+                <article class="post">
+                    <img class="user-photo" src="user-2.jpg">
+
+                    <div class="post-content">
+                        <header class="post-info">
+                            <h2>Petar Mihailov</h2>
+                            <span>•</span>
+                            <small>5 hours ago</small>
+
+                            <i class="close fas fa-times"></i>
+                        </header>
+                    
+                        <section>
+                            <p>
+                                A A A A A A A A A A A A A A
+                            </p>
+                        </section>
+ 
+                        <aside class="interactions">
+                            <ul>
+                                <li>
+                                    <i class="interaction-buttons far fa-thumbs-up"></i>
+                                    1.69M
+                                </li>
+                                <li>
+                                    <i class="interaction-buttons far fa-thumbs-down"></i>
                                     0
                                 </li>
                             </ul>
                         </aside>
                     </div>
-                </article>                
+                </article>  
             </div>
 
         </section>

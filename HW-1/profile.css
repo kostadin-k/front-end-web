@@ -20,6 +20,7 @@ nav {
     justify-content: space-between;
     padding: .25rem 1rem;
 }
+
 nav h1 {
     font-size: 2rem;
     font-weight: normal;
@@ -46,7 +47,7 @@ input {
 .content {
     display: flex;
     flex-direction: row;
-    padding: 15px 0 0;
+    padding: 1rem 0 0;
     justify-content: center;
     align-items: flex-start;
     width: 100%;
@@ -65,7 +66,10 @@ input {
     align-items: center;
     background-color: white;
     padding: 1rem;
-    column-gap: 2rem;
+}
+
+.user h2 {
+    margin-top: 1rem;
 }
 
 .user img {
@@ -118,9 +122,14 @@ input {
 .new-post {
     background-color: #f4fcfd;
     display: flex;
-    padding: .5rem 2rem;
+    padding: .5rem 1rem;
     align-items: center;
+    justify-content: space-between;
     gap: 1rem;
+}
+
+.new-post form {
+    flex-grow: 1;
 }
 
 .new-post input {
@@ -128,8 +137,9 @@ input {
     border-radius: 2rem;
     border: 2px solid #ecf0fd;
     /* align-self: stretch; */
-    
+    width: 100%; 
 }
+
 
 .post {
     display: flex;
@@ -139,8 +149,19 @@ input {
     border-top: 1px solid #dadada;
 }
 
+.post-info {
+    display: flex;
+    gap: .3rem;
+}
+
+.post-info .close {
+    width: 1rem;
+    color: #848694;
+    align-self: flex-end;
+}
+
 .post-info h2 {
-    font-size: 1rem;    
+    font-size: 1rem;
     display: inline;
 }
 
@@ -158,8 +179,17 @@ input {
 
 .interactions ul {
     display: flex;
+    gap: 1rem;
 }
 
-.interaction-buttons {
+@media (max-width: 600px) {
+    .content {
+        flex-direction: column;
+        gap: 0;
+    }
 
+    .content > * {
+        width: 90%;
+        max-width: none;
+    }
 }
