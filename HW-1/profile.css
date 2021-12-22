@@ -140,7 +140,6 @@ input {
     width: 100%; 
 }
 
-
 .post {
     display: flex;
     align-items: flex-start;
@@ -182,9 +181,10 @@ input {
     gap: 1rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 890px) {
     .content {
         flex-direction: column;
+        justify-self: center;
         gap: 0;
     }
 

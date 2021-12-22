@@ -66,3 +66,10 @@ footer {
     margin-top: 1rem;
     justify-content: flex-end;
 }
+
+@media (max-width: 890px) {
+    #wrapper {
+        max-width: none;
+        width: 90%;
+    }
+}
